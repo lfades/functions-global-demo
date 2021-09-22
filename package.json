@@ -1,0 +1,25 @@
+{
+  "name": "functions-global",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Luis Alvarez <luis@vercel.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "canary",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.18",
+    "autoprefixer": "^10.3.4",
+    "postcss": "^8.3.6",
+    "prettier": "^2.4.1",
+    "tailwindcss": "^2.2.15",
+    "typescript": "^4.3.5"
+  }
+}

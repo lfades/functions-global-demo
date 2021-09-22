@@ -1,0 +1,1 @@
+# Functions global scope demo
