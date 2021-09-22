@@ -1,4 +1,4 @@
-import { globalCounter } from '@lib/counter';
+import { globalCounter, scopeCounter } from '@lib/counter';
 import { NextApiRequest, NextApiResponse } from 'next';
 
 export default async function handler(
@@ -6,5 +6,8 @@ export default async function handler(
   res: NextApiResponse
 ) {
   globalCounter.count++;
-  res.send({ count: globalCounter.count });
+  res.send({
+    globalCount: globalCounter.count,
+    scopeCount: scopeCounter.count,
+  });
 }
